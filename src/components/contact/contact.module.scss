@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  padding: 40px 80px;
+
+  form {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    & > div {
+      align-items: center;
+      width: 100%;
+      max-width: 500px;
+
+      & > :is(input, textarea) {
+        justify-content: center;
+        min-width: 100%;
+      }
+    }
+  }
+
+  & > form > * {
+    display: flex;
+
+    & > input,
+    textarea {
+      &:focus {
+        & + label {
+          transform: translate(3px, -15px);
+          transition: all 300ms ease;
+        }
+      }
+    }
+
+    & > input {
+      all: unset;
+      display: flex;
+      min-height: 36px;
+      border-radius: 8px;
+      background-color: lightblue;
+      text-align: center;
+    }
+
+    & > textarea {
+      border-radius: 8px;
+      background-color: lightblue;
+      min-height: 250px; /* Hauteur fixe de 250px */
+      overflow-x: hidden; /* Empêche le défilement horizontal */
+      overflow-y: auto; /* Défilement vertical */
+      resize: none;
+      font-family: inherit;
+      font-size: medium;
+      padding: 16px;
+    }
+    & > label {
+      font-weight: 500;
+      font-size: 1.3rem;
+      position: absolute;
+      transform: translate(5px, 0px);
+      transition: all 300ms ease;
+      background-color: #3787dd;
+      border-radius: 12px;
+      padding: 6px;
+      pointer-events: none;
+      color: whitesmoke;
+    }
+  }
+  .text {
+    align-items: center;
+
+    & > label {
+      align-self: flex-start;
+      transform: translate(5px, 5px);
+    }
+  }
+  .text > .stillActived {
+    transform: translate(3px, -15px);
+    transition: all 300ms ease;
+  }
+  .actived {
+    transform: translate(5px, -9px);
+    transition: all 300ms ease;
+  }
+}

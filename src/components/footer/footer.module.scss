@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  height: 300px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 10px 30px;
+}
+
+.logo {
+  width: clamp(150px, 17%, 300px);
+  transform: translate(0px, -80px);
+  &:hover {
+    rotate: 4deg;
+    transform: translate(0, -85px);
+    transition: all 300ms;
+  }
+}

@@ -1,0 +1,12 @@
+.app {
+  overflow-x: hidden;
+
+  .background {
+    background-image: url("../../img/bckgroundRevers.png");
+    background-size: cover;
+  }
+  .background2 {
+    background-image: url("../../img/bckground.webp");
+    background-size: cover;
+  }
+}

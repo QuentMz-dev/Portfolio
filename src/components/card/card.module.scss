@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  background-color: #1b5793;
+  color: white;
+  max-height: 300px;
+  max-width: 160px;
+  min-width: 160px;
+  gap: 12px;
+  border-radius: 8px;
+}
+
+.txt,
+.sub {
+  color: white;
+}
