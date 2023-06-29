@@ -2,7 +2,7 @@ export const DATA_PERSONNAL = {
   name: "Mouzon",
   nickName: "Quentin",
   experience: "Junior",
-  linkGitHub: "https://google.com",
+  linkGitHub: "https://github.com/QuentMz-dev",
   linkLinkeIn: "https://www.linkedin.com/in/quentin-mouzon-a0bb35261/",
 };
 
